@@ -3,29 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QR Code Generator</title>
-    <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+    <title>qr</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d98b2bf19e.js" crossorigin="anonymous"></script> 
 </head>
 <body>
     <div class="parent">
-        <div class="top">
-            <h1 id="heading">QR gen</h1>
-        </div>
         <div class="box">
             <div class="heading">
-                <h3>Enter your URL</h3>
+                <h2>Qr code Gen</h2>
+                <h3>Enter your url</h3>
             </div>
             <div class="input">
+                <form action="#">
                 <input type="url" spellcheck="false" id="text">
-                <button type="button" id="generate">Generate QR Code</button>
+                <button type="button" id="generate"><i class="fa-solid fa-qrcode"></i></button>
+                </form>
             </div>
             <div class="image">
-                <div id="qrcode"></div>
+                <img class="qrcode">
             </div>
-            <button type="button" id="download">Download QR Code</button>
+            <button type="button" id="download"><i class="fa-solid fa-download"></i></button>
         </div>
     </div>
-    <script src="script.js"></script>
 </body>
+<script src="script.js"></script>
 </html>

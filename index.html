@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>qr</title>
+    <title>QR Code Generator</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/d98b2bf19e.js" crossorigin="anonymous"></script> 
 </head>
@@ -11,21 +11,21 @@
     <div class="parent">
         <div class="box">
             <div class="heading">
-                <h2>Qr code Gen</h2>
-                <h3>Enter your url</h3>
+                <h2>QR Code Gen</h2>
+                <h3>Enter your URL</h3>
             </div>
             <div class="input">
                 <form action="#">
-                <input type="url" spellcheck="false" id="text">
-                <button type="button" id="generate"><i class="fa-solid fa-qrcode"></i></button>
+                    <input type="url" spellcheck="false" id="text">
+                    <button type="button" id="generate"><i class="fa-solid fa-qrcode"></i></button>
                 </form>
             </div>
             <div class="image">
-                <img class="qrcode">
+                <canvas id="qrcodeCanvas"></canvas>
             </div>
             <button type="button" id="download"><i class="fa-solid fa-download"></i></button>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
-<script src="script.js"></script>
 </html>

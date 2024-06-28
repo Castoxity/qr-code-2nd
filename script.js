@@ -13,14 +13,9 @@ btn.addEventListener('click', async (e) => {
     } else {
         let qrSize = 1000;
         let borderSize = 10;
-        // Set canvas size to include the border
         canvas.width = qrSize + borderSize * 2;
         canvas.height = qrSize + borderSize * 2;
-
-        // Clear the canvas
         ctx.clearRect(0, 0, canvas.width, canvas.height);
-
-        // Fetch the QR code image
         let qrUrl = `https://api.qrserver.com/v1/create-qr-code/?size=${qrSize}x${qrSize}&data=${encodeURIComponent(text)}`;
         let response = await fetch(qrUrl);
         let blob = await response.blob();
